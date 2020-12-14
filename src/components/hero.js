@@ -16,7 +16,9 @@ import heroWebp from '../images/hero-1.webp'
 import motoblouz from '../images/motoblouz.gif'
 
 const Hero = ({ siteTitle }) => (
-  <Box>
+  <Box
+    display={{ base:'none', lg:'block'}}
+  >
     <Grid
       gridTemplateColumns={{ base:'100%', lg:'1fr 25%'}}
       gridGap='2rem'
