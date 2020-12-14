@@ -58,10 +58,10 @@ const Hero = ({ siteTitle }) => (
 
         </Flex>
         <picture>
-          <source
+          {/* <source
             type='image/webp'
             srcSet={heroWebp}
-          />
+          /> */}
           <source
             type='image/jpeg'
             srcSet={heroJpg}
