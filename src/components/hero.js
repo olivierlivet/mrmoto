@@ -13,6 +13,7 @@ import {
 
 import heroJpg from '../images/hero-1.jpg'
 import heroWebp from '../images/hero-1.webp'
+import motoblouz from '../images/motoblouz.gif'
 
 const Hero = ({ siteTitle }) => (
   <Box>
@@ -85,7 +86,7 @@ const Hero = ({ siteTitle }) => (
           fontSize='16px'
         >Promos moto chez Motoblouz 🐓</Heading>
         <Image
-          src='https://img.metaffiliation.com/0/4641/img_11_37_55.gif'
+          src={ motoblouz }
           alt='Banner pub'
           borderRadius='10px'
         />

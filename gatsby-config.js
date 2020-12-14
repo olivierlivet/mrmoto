@@ -7,14 +7,14 @@ module.exports = {
 
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-robots-txt`,
-      options: {
-        host: 'https://main.d3bwdsfi8iidw4.amplifyapp.com/',
-        sitemap: 'https://main.d3bwdsfi8iidw4.amplifyapp.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-robots-txt`,
+    //   options: {
+    //     host: 'https://main.d3bwdsfi8iidw4.amplifyapp.com/',
+    //     sitemap: 'https://main.d3bwdsfi8iidw4.amplifyapp.com/sitemap.xml',
+    //     policy: [{ userAgent: '*', allow: '/' }]
+    //   }
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,19 +24,19 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `GatsbyJS`,
-    //     short_name: `GatsbyJS`,
-    //     start_url: `/`,
-    //     background_color: `#f7f0eb`,
-    //     theme_color: `#a2466c`,
-    //     display: `standalone`,
-    //     icon: './src/images/favicon.png',
-    //   },
-    // },
+    { resolve: 'gatsby-plugin-sharp', options: { failOnError: false } },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon:'src/images/favicon.png'
+      },
+    },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
