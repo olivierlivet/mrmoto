@@ -17,15 +17,16 @@ import heroWebp from '../images/hero-1.webp'
 const Hero = ({ siteTitle }) => (
   <Box>
     <Grid
-      gridTemplateColumns={{ base:'100%', lg:'75% 25%'}}
-      gridGap='1rem'
+      gridTemplateColumns={{ base:'100%', lg:'1fr 25%'}}
+      gridGap='2rem'
     >
       <Box>
-        <Heading>Notre dernière actu :</Heading>
+        <Heading mb='1rem' as='p' fontSize='24px'>Notre dernière actu :</Heading>
         <Box
           position='relative'
           borderRadius='20px'
           overflow='hidden'
+          cursor='pointer'
         >
           <Flex
             position='absolute'
@@ -80,9 +81,14 @@ const Hero = ({ siteTitle }) => (
       </Box>
       <Box>
         <Heading
-          fontSize='18px'
+          mb='1rem'
+          fontSize='16px'
         >Promos moto chez Motoblouz 🐓</Heading>
-        <Text>Test</Text>
+        <Image
+          src='https://img.metaffiliation.com/0/4641/img_11_37_55.gif'
+          alt='Banner pub'
+          borderRadius='10px'
+        />
 
       </Box>
     </Grid>

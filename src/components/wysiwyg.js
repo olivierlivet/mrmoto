@@ -12,7 +12,7 @@ import {
 
 const Wysiwyg = ({ siteTitle }) => (
   <Stack spacing={ 10 }>
-    <Heading as="h2">Qui sommes-nous ?</Heading>
+    <Heading as="h2" fontSize={{ base:'22px', lg:'28px', xl:'32px' }}>Qui sommes-nous ?</Heading>
  
 <Text>
    Nous sommes des passionnés de moto qui débutent dans le blogging ! Notre credo ? Mettre à contribution notre expérience pour vous proposer des guides et avis sur des produits qui sont les plus adaptés pour nous les motards.
@@ -20,7 +20,7 @@ const Wysiwyg = ({ siteTitle }) => (
 </Text>
  
   
-<Heading as="h2">
+<Heading as="h2"  fontSize={{ base:'22px', lg:'28px', xl:'32px' }}>
     Comment le site fonctionne ?
 
  </Heading>
@@ -38,7 +38,7 @@ const Wysiwyg = ({ siteTitle }) => (
  </Text>
  
   
- <Heading as="h2">    Pourquoi avoir décidé d’écrire sur la moto ?</Heading>
+ <Heading as="h2" fontSize={{ base:'22px', lg:'28px', xl:'32px' }}>    Pourquoi avoir décidé d’écrire sur la moto ?</Heading>
 
   
  <Text>

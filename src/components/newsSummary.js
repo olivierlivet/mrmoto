@@ -67,9 +67,22 @@ const NewsSummary = ({ siteTitle }) => (
                 }}
             >
                 <picture>
-                    <source srcSet={th1webp} type='image/webp' />
-                    <source srcSet={th1jpg} type='image/jpeg' />
-                    <Image loading='lazy' src={th1jpg} alt='MrMoto' />
+                    <source
+                        srcSet={i=== 0 ? th1webp : i=== 1 ? th2webp : th3webp}
+                        type='image/webp'
+                    />
+                    <source
+                        srcSet={i=== 0 ? th1jpg : i=== 1 ? th2jpg : th3jpg}
+                        type='image/jpeg'
+                    />
+                    <Image
+                        loading='lazy'
+                        src={th1jpg}
+                        alt='MrMoto'
+                        h='140px'
+                        w='100%'
+                        objectFit='cover'
+                    />
                 </picture>
                 <Text
                     h='5rem'

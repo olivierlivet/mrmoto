@@ -3,8 +3,18 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    siteUrl: 'https://www.example.com'
+
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://main.d3bwdsfi8iidw4.amplifyapp.com/',
+        sitemap: 'https://main.d3bwdsfi8iidw4.amplifyapp.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
