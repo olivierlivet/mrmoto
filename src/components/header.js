@@ -7,8 +7,12 @@ import {
 } from '@chakra-ui/react'
 
 const Header = ({ siteTitle }) => (
-  <Box>
-    Logo
+  <Box
+    fontWeight='700'
+    color='gray.900'
+    fontSize={{ base:'22px', lg:'38px' }}
+  >
+    MonsieurMoto
   </Box>
 )
 

@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import { Stack } from '@chakra-ui/react'
+
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -12,11 +14,17 @@ import Wysiwyg from '../components/wysiwyg'
 const IndexPage = () => (
   <Layout>
     <SEO title="Mr Moto - Homepage" />
-    <Header />
-    <Hero />
-    <NewsSummary limite={3} />
-    <Wysiwyg />
-    <NewsSummary  limite={12} />
+    <Stack
+      spacing={10}
+      shouldWrapChildren={true}
+    >
+      <Header />
+      <Hero />
+      <NewsSummary limite={3} />
+      <Wysiwyg />
+      <NewsSummary limite={12} />
+    </Stack>
+
   </Layout>
 )
 

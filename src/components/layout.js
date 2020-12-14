@@ -14,6 +14,8 @@ import {
   ChakraProvider,
   Box
 } from '@chakra-ui/react'
+import Footer from '../components/footer'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -31,6 +33,7 @@ const Layout = ({ children }) => {
         maxW='1100px'
         mx='auto'
         as='main'>{children}</Box>
+        <Footer />
     </ChakraProvider>
   )
 }
