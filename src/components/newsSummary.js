@@ -67,9 +67,9 @@ const NewsSummary = ({ siteTitle }) => (
                 }}
             >
                 <picture>
-                    <source srcSet={th1jpg} type='image/jpg' />
                     <source srcSet={th1webp} type='image/webp' />
-                    <Image src={th1jpg} alt='MrMoto' />
+                    <source srcSet={th1jpg} type='image/jpeg' />
+                    <Image loading='lazy' src={th1jpg} alt='MrMoto' />
                 </picture>
                 <Text
                     h='5rem'
@@ -78,7 +78,7 @@ const NewsSummary = ({ siteTitle }) => (
                 </Text>
                 <Stack
                     fontSize={{ base:'12px', lg:'14px'}}
-                    color='yellow.500'
+                    color='yellow.700'
                     isInline>
                     <Text>{ item.date }</Text>
                     <Text>{ item.category }</Text>

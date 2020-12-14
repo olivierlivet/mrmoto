@@ -37,7 +37,7 @@ const Hero = ({ siteTitle }) => (
             justify='center'
             align='center'
 
-            bg='rgba(10,10,10,.4)'
+            bg='rgba(10,10,10,.7)'
               h='100%'
           >
             <Box
@@ -60,19 +60,19 @@ const Hero = ({ siteTitle }) => (
         </Flex>
         <picture>
           <source
-            type='image/jpeg'
-            srcSet={heroJpg}
-          />
-          <source
             type='image/webp'
             srcSet={heroWebp}
+          />
+          <source
+            type='image/jpeg'
+            srcSet={heroJpg}
           />
           <Image
             src={heroJpg}
             alt='Actualité Mr Moto'
             w='100%'
             h='100%'
-            objectFit='cover'
+            // objectFit='cover'
           />
         </picture>
         </Box>
