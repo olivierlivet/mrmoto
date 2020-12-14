@@ -24,10 +24,10 @@ const Hero = ({ siteTitle }) => (
         <Heading>Notre dernière actu :</Heading>
         <Box
           position='relative'
+          borderRadius='20px'
+          overflow='hidden'
         >
           <Flex
-            overflow='hidden'
-            borderRadius='20px'
             position='absolute'
             color='white'
             top='0'
@@ -36,12 +36,11 @@ const Hero = ({ siteTitle }) => (
             h='100%'
             justify='center'
             align='center'
-
             bg='rgba(10,10,10,.7)'
               h='100%'
           >
             <Box
-              px={'10rem'}
+              px={'5rem'}
               
             >
               <Heading
@@ -72,7 +71,8 @@ const Hero = ({ siteTitle }) => (
             alt='Actualité Mr Moto'
             w='100%'
             h='100%'
-            // objectFit='cover'
+            objectFit='cover'
+            m='0'
           />
         </picture>
         </Box>

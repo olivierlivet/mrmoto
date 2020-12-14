@@ -10,6 +10,7 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import NewsSummary from '../components/newsSummary'
 import Wysiwyg from '../components/wysiwyg'
+import Wysiwyg2 from '../components/wysiwyg2'
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,8 @@ const IndexPage = () => (
       <Hero />
       <NewsSummary limite={3} />
       <Wysiwyg />
+      <NewsSummary limite={12} />
+      <Wysiwyg2 />
       <NewsSummary limite={12} />
     </Stack>
 
